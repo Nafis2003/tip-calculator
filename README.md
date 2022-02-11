@@ -2,6 +2,8 @@
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
+Live Preview:https://eloquent-jang-30f529.netlify.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
