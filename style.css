@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
+
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				/*outline: 2px solid black; */
+				font-family: 'Space Mono', monospace;
+}
+
+body {
+background: hsla(172, 67%, 45%,25%);
+display: flex;
+justify-content: center;
+}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width:600px;
+min-height: 100vh;
+}
+
+#logo{
+				margin-bottom: 3rem;
+}
+
+#app{
+background: #fff;
+padding: 2rem;
+border-radius:2rem 2rem 0;
+}
+
+#app>*{outline: 2px solid red;}
+
+label{
+				color:hsl(183, 100%, 15%);
+}
+
+input{
+				width: 100%;
+				height: 2.5rem;
+				margin:1rem 0;
+				padding:1.5rem;
+				border:0;
+				border-radius: 0.5rem;
+				outline: 0;
+				direction: rtl;
+				caret-color: transparent;
+				font-weight: 700;
+				font-size:1.5rem;
+				color:hsl(183, 100%, 15%) ;
+				background-color: hsl(189, 41%, 97%);
+}
+
+#inputBox input {
+background-image: url('images/icon-dollar.svg');
+				background-repeat: no-repeat;
+				background-position: left 1.5rem center;
+				background-size:0.8rem;
+}
+
+#inputBox+p{
+				margin:1.5rem 0 0rem;
+}
+
+#inputBox2 input{
+background-image: url("images/icon-person.svg");
+		background-repeat: no-repeat;
+				background-position: left 1.5rem center;
+				background-size:1rem;	
+}
+
+input:focus{
+border: 2px solid #25BFAB;
+}
+
+#btns{
+				display: grid;
+				align-items: center;
+				justify-content: space-between;
+				grid-template-columns:1fr 1fr;
+				gap:1.25rem;
+				margin:1rem 0 2rem;
+}
+
+#btns button {
+font-size: 1.25rem;
+font-weight: 700;
+background-color: hsl(183, 100%, 15%) ;
+color: #fff;
+padding: 0.75rem;
+border: 0;
+border-radius: 0.5rem;
+font-family: 'Space Mono', monospace;
+}
+
+
+#btns button.active{
+				background-color: hsl(172, 67%, 45%);
+				color: hsl(183, 100%, 15%);
+}
+
+
+#result{
+			background:hsl(183, 100%, 15%) ;
+			padding:1.5rem;
+			border-radius:1rem;
+			max-width:100%;
+}
+
+#result>div{
+display:flex ;
+max-width:100%;
+justify-content:space-between;
+align-items: center;
+position: relative;
+}
+
+#reset{
+				background-color: hsl(172, 67%, 45%);
+				width: 100%;
+}
+
+h3{
+outline: 2px solid red;
+}
+
+div>h3>span{
+font-size: small;
+font-weight: normal;
+}
+
+div>span {
+font-size:2rem;
+overflow:scroll;
+outline: 2px solid black;
+flex-basis:30%;
+flex-grow:0;
+}
+
+
+footer {
+				position: relative;
+				bottom: 1rem;
+				width: 100%;
+				display: none;
+}
+
+ .attribution {
+ position: relative;
+ bottom: 0; left: 0;font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:800px){
+
+main{
+max-width:700px;
+}
+
+#app{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				column-gap:1rem;
+}
+
+#btns{
+				grid-template-columns:1fr 1fr 1fr;
+}
+				
+}
+
+@media(min-width:1000px){
+
+main{
+max-width:800px;
+}
+
+
+#input,#result{
+				width:50%;
+}
+
+#result{
+				height: 100%;
+}
+				
+}
+
+@media(min-width:1200px){
+
+main{
+max-width: 1000px;
+}
+				
+}
